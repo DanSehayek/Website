@@ -1,0 +1,130 @@
+.bg-blue {background-color: #00bfff;
+          color: white;
+          font-family: Montserrat}
+
+.container {position: relative;
+            margin-top: 20px;
+            font-family: Montserrat}
+
+.navbar {font-family: Montserrat;
+         font-size: 16px;
+         border: 0}
+
+.navbar-nav li a:hover {color: white !important;
+                        background-color: lightblue !important}
+
+.navbar-nav ul li.active a {color: white !important;
+                            background-color: lightblue !important}
+
+h2 {font-size: 30px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px}
+
+.bg-grey {background-color: #eee9e9}
+.bg-white {background-color: white}
+
+img {transition: box-shadow 0.5s}
+img:hover {box-shadow: 5px 0px 40px rgba(0,0,0, .2)}
+
+.slideanim {visibility: hidden}
+.slide {animation-name: slide;
+        -webkit-animation-name: slide;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        visibility: visible}
+
+@keyframes slide {
+    0% {opacity: 0;
+        -webkit-transform: translateY(70%)}
+    100% {opacity: 1;
+          -webkit-transform: translateY(0%)}}
+
+@-webkit-keyframes slide {
+    0% {opacity: 0;
+        -webkit-transform: translateY(70%)}
+    100% {opacity: 1;
+          -webkit-transform: translateY(0%)}}
+
+#award-title {font-size: 20px}
+
+.panel {border: 1px solid skyblue;
+        border-radius:0;
+        transition: box-shadow 0.5s}
+
+.panel:hover {box-shadow: 5px 0px 40px rgba(0,0,0, .2)}
+
+.panel-heading {background-color: lightblue !important;
+                padding: 25px;
+                border-bottom: 1px solid transparent;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px}
+
+.panel-body {font-family: Roboto}
+
+#homePage {position: relative;
+           background: #000 url("../img/Homepage Bg.jpg") center center;
+           width: 100%;
+           height: 650px;
+           background-size: cover;
+           overflow: hidden}
+
+#homeCover {background-color: black;
+            background:rgba(0,0,0,0.5);
+            width: 100%;
+            height: 750px;
+            line-height: 500px;
+            text-align: center}
+
+#welcome {color: white;
+          margin-top: 300px !important;
+          font-size: 60px;
+          font-family: Montserrat}
+
+.Text {font-size: 17px !important}
+
+.panel-heading {width: 500px;
+                height: 50px}
+
+.panel-heading h2 {position: relative;
+                   margin-top: -10px}
+
+.panel {width: 500px;
+        position: relative;
+        margin-top: 20px}
+
+.panel-body p {font-size: 17px;
+               font-family: Arial;
+               font-weight: 100;
+               height: 17px}
+
+#AboutMeText {position: relative;
+              margin-top: -20px}
+
+#CuriosityText {position: relative;
+                margin-top: -20px}
+
+#GameText {position: relative;
+           margin-top: -20px}
+
+#WebText {position: relative;
+          margin-top: -20px}
+
+#SecondAwardRow {height: 145px}
+
+#SecondAwardRowText1 {padding-top: 24px}
+#SecondAwardRowText2 {padding-top: 20px}
+
+#accordion {position: relative;
+            margin-left: -28px}
+
+.SizeAdjuster {opacity: 0}
+
+.panel-title {position: relative;
+              margin-top: -8px}
+
+#Account {position: relative;
+          margin-left: 475px}
