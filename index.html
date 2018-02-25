@@ -49,6 +49,17 @@
         <li><a href = "#MachineLearning"> Machine Learning </a></li>
       </ul>
       </li>
+      <li class = "dropdown">
+      <a class = "dropdown-toggle" data-toggle = "dropdown" href = "#"> Research
+      <span class = "caret"></span></a>
+      <ul class = "dropdown-menu">
+        <li class="dropdown-header"> Environment Canada </li>
+        <li><a href = "#AIMNorth"> AIM-North </a></li>
+        <li class="dropdown-header"> Triumf </li>
+        <li><a href = "#Multipole"> Multipole </a></li>
+        <li><a href = "#Tomography"> Tomography </a></li>
+      </ul>
+      </li>
       <li><a href = "#Awards"> Awards </a></li>
     </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -253,7 +264,115 @@
   </div>
 </div>
 
-<div class = "jumbotron bg-white slideanim" id = "Awards">
+<div class = "jumbotron bg-white slideanim" id = "AIMNorth">
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-sm-7" id = "AppText">
+        <h2> AIM-North </h2>
+        <p class = "Text">
+          During my first coop term at Environment Canada (EC),
+          my main focus was contributing to project
+          <a href = "http://aim-north.ca/"> AIM-North </a>.
+          The main goal of this project is to provide frequent
+          and high quality observations of greenhouse gases, air
+          quality and solar induced fluorescence from vegetation
+          in the northern regions. This would be accomplished using
+          two satellites placed in a highly elliptical orbit (HEO)
+          configuration. The different subprojects that I was given in
+          relation to this mission included:
+          <ul class = "Text">
+            <li>Providing cloud data visualization and analysis
+              using Numpy and Matplotlib in order to
+              assess the plausibility of intelligent pointing</li>
+            <li>Developing a model to represent the regions of
+              observation of the HEO satellite while considering
+              the Bowtie effect (shown to the right)</li>
+            <li>Researching and summarizing papers to help determine
+              the orbital configurations that would optimize
+              spatial and temporal coverage</li>
+          </ul>
+        </p>
+        <p class = "Text">
+          I would love to discuss more about this project, so if
+          you are interested to learn more then please click the link above!
+        </p>
+      </div>
+      <div class = "col-sm-5">
+        <img src = "img/AIMNorth.png" class = "img-thumbnail">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class = "jumbotron bg-grey slideanim" id = "Multipole">
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-sm-5">
+        <img src = "img/Multipole.png" class = "img-thumbnail">
+      </div>
+      <div class = "col-sm-7" id = "WebText">
+        <h2> Multipole Tuning Algorithm </h2>
+        <p class = "Text">
+          The first major project that I was given at Triumf was to create and
+          implement an optimization/automatic tuning algorithm for the CANREB
+          HRS Multipole. The ultimate goal of this algorithm is to determine
+          the configuration of electrode potentials that will minimize the
+          distance between the centroid and the center of the beam given an
+          initial phase space distribution. This will allow only the desired
+          rare isotope to pass through the exit slit. Most of the scientific
+          programming involved was done using Scipy and Numpy. While many
+          different optimization routines were considered, the method of least
+          squares was determined to be the most effective in terms of
+          minimizing the total deviation and the runtime.
+        </p>
+        <p class = "Text">
+          For a full description of the algorithm, I would encourage you to
+          read my
+          <a href = "http://lin12.triumf.ca/text/design_notes/2017Sehayek_multipole-tuning-algorithm/Beam_phys_note_temp.pdf"> report </a>.
+          I also developed a web application for this algorithm
+          using the Python Flask framework that you can check out
+          <a href = "http://devel.hla.triumf.ca/atom"> here </a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class = "jumbotron bg-white slideanim" id = "Tomography">
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-sm-7" id = "AppText">
+        <h2> Tomography Algorithm </h2>
+        <p class = "Text">
+          My second major project at Triumf is focused on optimizing the 2D
+          phase space tomography algorithm. The tomography algorithm was
+          developed to determine the phase space at a given longitudinal
+          coordinate along a beamline without the need for an emittance
+          scanner. The 2D tomography reconstruction is done using
+          Maximum Entropy Tomography (MENT) which
+          takes an arbitrary number of 1D profiles. By choosing a profile
+          monitor and setting a ramping element such as a quadrupole to
+          different values, these 1D profiles can be obtained by using the
+          corresponding transfer matrices while thus allowing for the phase
+          space reconstruction. Of course many factors can influence the
+          accuracy of the reconstruction such as the number of profiles
+          and the smoothness of the profiles and it is these factors that I am
+          currently attempting to optimize.
+        </p>
+        <p class = "Text">
+          As with the multipole algorithm, I am once again developing a web
+          application to go with this! I plan to add links to both the web app
+          and the report once they are completed.
+        </p>
+      </div>
+      <div class = "col-sm-5">
+        <img src = "img/Tomography.png" class = "img-thumbnail">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class = "jumbotron bg-grey slideanim" id = "Awards">
   <div class = "container">
     <div class = "text-left">
       <h2> Awards </h2>
