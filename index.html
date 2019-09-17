@@ -39,6 +39,19 @@
       <li class = "active"><a href = "#"> Home </a></li>
       <li><a href = "#AboutMe"> About Me </a></li>
       <li class = "dropdown">
+      <a class = "dropdown-toggle" data-toggle = "dropdown" href = "#"> Research
+      <span class = "caret"></span></a>
+      <ul class = "dropdown-menu">
+        <li class="dropdown-header"> Perimeter Institute </li>
+        <li><a href = "#QuantumML"> Quantum ML </a></li>
+        <li class="dropdown-header"> Triumf </li>
+        <li><a href = "#Multipole"> Multipole </a></li>
+        <li><a href = "#Tomography"> Tomography </a></li>
+        <li class="dropdown-header"> Environment Canada </li>
+        <li><a href = "#AIMNorth"> AIM-North </a></li>
+      </ul>
+      </li>
+      <li class = "dropdown">
       <a class = "dropdown-toggle" data-toggle = "dropdown" href = "#"> Projects
       <span class = "caret"></span></a>
       <ul class = "dropdown-menu">
@@ -49,20 +62,10 @@
         <li><a href = "#MachineLearning"> Machine Learning </a></li>
       </ul>
       </li>
-      <li class = "dropdown">
-      <a class = "dropdown-toggle" data-toggle = "dropdown" href = "#"> Research
-      <span class = "caret"></span></a>
-      <ul class = "dropdown-menu">
-        <li class="dropdown-header"> Environment Canada </li>
-        <li><a href = "#AIMNorth"> AIM-North </a></li>
-        <li class="dropdown-header"> Triumf </li>
-        <li><a href = "#Multipole"> Multipole </a></li>
-        <li><a href = "#Tomography"> Tomography </a></li>
-      </ul>
-      </li>
-      <li><a href = "#Awards"> Awards </a></li>
+      <!-- <li><a href = "#Awards"> Awards </a></li> -->
     </ul>
       <ul class="nav navbar-nav navbar-right">
+        <li><a href = "https://scholar.google.com/citations?user=oSeAPT4AAAAJ&hl=en"><i class="fa fa-google fa-fw"></i>Google Scholars</a></li>
         <li><a href = "ML Docs.pdf"><i class="fa fa-android fa-fw"></i><span class="network-name">ML Docs</a></li>
         <li><a href = "Quantum Docs.pdf"><i class="fa fa-rocket fa-fw"></i> Quantum Docs </a></li>
         <li><a href = "https://github.com/DanSehayek"><i class="fa fa-github fa-fw"></i><span class="network-name">Github</span></a></li>
@@ -83,26 +86,168 @@
       <div class = "col-sm-8" id = "AboutMeText">
         <h2> About Me </h2>
         <p class = "Text">
-          Hi there! My name is Dan Sehayek and I am a third year
-          Mathematical Physics student at the University of Waterloo. I have
-          always been extremely passionate about learning mathematics and
-          physics as they constantly provide exciting challenges and
-          opportunities to gain a better understanding of the way the world
-          works.
+          Hi there! My name is Dan Sehayek and I am currently completing my
+          final year as an undergraduate Mathematical Physics student at the
+          University of Waterloo. I have always been extremely passionate about
+          learning mathematics and physics as they constantly provide exciting
+          challenges and opportunities to gain a better understanding of the
+          way the world works.
         </p>
         <p class = "Text">
           I could definitely say that I believe in the value of constantly
           taking the initiative to learn new things and gain new
-          perspectives. Thoughout my highschool and undergrad career, I have
-          learned several new skills and completed many exciting projects
-          related to science and coding on my spare time. I am currently taking
-          the time to learn about machine learning and quantum computing and
-          hope to complete projects based on these subjects soon! Feel free to
-          read all about my current projects in the sections below!
+          perspectives. Thoughout my undergraduate career, I've worked with
+          several amazing research groups and completed many personal
+          projects related to physics, programming and education. Feel free
+          to read more about my research and projects in the sections below!
         </p>
       </div>
       <div class = "col-sm-4">
         <img src = "img/Faculty of Science.png" class = "img-thumbnail" alt = "Faculty of Science">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class = "jumbotron bg-grey slideanim" id = "QuantumML">
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-sm-5">
+        <img src = "img/RBM.png" class = "img-thumbnail">
+      </div>
+      <div class = "col-sm-7" id = "WebText">
+        <h2> Quantum Machine Learning </h2>
+        <p class = "Text">
+          The field of quantum machine learning is a very new field and has
+          exploded in the past few years. It seeks to apply machine learning
+          to solve problems in quantum mechanics, but also to apply quantum
+          mechanics to enhance machine learning algorithms. The prior has
+          become a major focus of Roger Melko’s research group at Perimeter,
+          now referred to as the PIQuIL, where we focus on using machine
+          learning to represent and study condensed matter systems as well
+          as address many of the challenges currently faced in quantum
+          computing, such as benchmarking quantum devices via quantum state
+          reconstuction and applying quantum error correcting to topological
+          codes. I currently have one publication being reviewed for PRB on
+          the learnability of quantum states with restricted Boltzmann
+          machines, which is one of the many generative models that we
+          frequently use to solve these problems. It can be found on
+          <a href = "https://arxiv.org/abs/1908.07532"> arXiv</a>.
+          Stay tuned for more updates as more of my projects become finalized!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class = "jumbotron bg-white slideanim" id = "Multipole">
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-sm-7" id = "WebText">
+        <h2> Multipole Tuning Algorithm </h2>
+        <p class = "Text">
+          The first major project that I was given at Triumf was to create and
+          implement an optimization/automatic tuning algorithm for the CANREB
+          HRS Multipole. The ultimate goal of this algorithm is to determine
+          the optimal configuration of electrode potentials that will correct
+          higher order beam aberrations given an initial phase space
+          distribution. In essence the algorithm will tune the multipole with
+          the goal of modifying the beam's shape to that of a vertical ellipse.
+          This will allow only the desired rare isotope to pass through the
+          exit slit. Most of the scientific programming involved was done using
+          Scipy and Numpy. While many different optimization routines were
+          considered, the method of least squares was determined to be the most
+          effective in terms of minimizing the total deviation and runtime.
+        </p>
+        <p class = "Text">
+          For a full description of the algorithm, I would encourage you to
+          read my
+          <a href = "http://accelconf.web.cern.ch/AccelConf/ipac2018/papers/thpml079.pdf"> paper</a>.
+          I also developed a web application for this algorithm
+          using the Python Flask framework that you can check out
+          <a href = "http://devel.hla.triumf.ca/atom"> here</a>.
+        </p>
+      </div>
+      <div class = "col-sm-5">
+        <img src = "img/Multipole.png" class = "img-thumbnail">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class = "jumbotron bg-grey slideanim" id = "Tomography">
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-sm-5">
+        <img src = "img/Tomography.png" class = "img-thumbnail">
+      </div>
+      <div class = "col-sm-7" id = "AppText">
+        <h2> Tomography Algorithm </h2>
+        <p class = "Text">
+          My second major project at Triumf is focused on optimizing the 2D
+          phase space tomography algorithm. The tomography algorithm was
+          developed to determine the phase space at a given longitudinal
+          coordinate along a beamline without the need for an emittance
+          scanner. The 2D tomography reconstruction is done using
+          Maximum Entropy Tomography (MENT) which
+          takes an arbitrary number of 1D profiles. By choosing a profile
+          monitor and setting a ramping element such as a quadrupole to
+          different values, these 1D profiles can be obtained by using the
+          corresponding transfer matrices while thus allowing for the phase
+          space reconstruction. Ultimately the number and types of profiles
+          and thus the number and types of transfer matrices/settings has a
+          major influence on the accuracy of the reconstruction and it is these
+          factors that I am currently considering in the design of the
+          optimization routine.
+        </p>
+        <p class = "Text">
+          Once again, a full overview of my results for this project can be
+          found in my
+          <a href = "http://lin12.triumf.ca/text/design_notes/TRI-BN-18-06.pdf"> report</a>.
+          And the relevant web application can be found
+          <a href = "https://devel.hla.triumf.ca/beam"> here</a> under
+          tomography.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class = "jumbotron bg-white slideanim" id = "AIMNorth">
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-sm-7" id = "AppText">
+        <h2> AIM-North </h2>
+        <p class = "Text">
+          During my first coop term at Environment Canada (EC),
+          my main focus was contributing to project
+          <a href = "http://aim-north.ca/"> AIM-North </a>.
+          The main goal of this project is to provide frequent
+          and high quality observations of greenhouse gases, air
+          quality and solar induced fluorescence from vegetation
+          in the northern regions. This would be accomplished using
+          two satellites placed in a highly elliptical orbit (HEO)
+          configuration. The different subprojects that I was given in
+          relation to this mission included:
+          <ul class = "Text">
+            <li>Providing cloud data visualization and analysis
+              using Numpy and Matplotlib in order to
+              assess the plausibility of intelligent pointing</li>
+            <li>Developing a model to represent the regions of
+              observation of the HEO satellite while considering
+              the Bowtie effect (shown to the right)</li>
+            <li>Researching and summarizing papers to help determine
+              the orbital configurations that would optimize
+              spatial and temporal coverage</li>
+          </ul>
+        </p>
+        <p class = "Text">
+          If you would like to learn more about this project then I
+          would encourage you to click the link above!
+        </p>
+      </div>
+      <div class = "col-sm-5">
+        <img src = "img/AIMNorth.png" class = "img-thumbnail">
       </div>
     </div>
   </div>
@@ -121,13 +266,14 @@
           Curiosity Compass </a>
           is an educational YouTube channel that I created
           on April 2016. Its purpose is to provide an additional educational
-          resource to students all across the global community. It also
-          serves as a great oppurtunity for me to answer specific questions
-          from students and develop a better appreciation for effective
-          teaching methods. I am currently creating videos that teach high
-          school math topics such as linear and quadratic functions. My
-          future goal is to begin creating physics videos once I feel that
-          the foundations of mathematics have been well established.
+          resource to students all across the global community. While this
+          was an exciting start to my educational goals, I’ve realized that
+          the idea of making lessons to match the high school curriculum is
+          far from what I currently believe will be the most beneficial to
+          improving education in science and mathematics. Not to mention that
+          it has already been heavily addressed! So I am currently working
+          a new plan, and hope to publish a new article or set of videos
+          when time permits!
         </p>
       </div>
     </div>
@@ -242,139 +388,28 @@
       <div class = "col-sm-6" id = "WebText">
         <h2> Machine Learning </h2>
         <p class = "Text">
-          One of the most recent research topics that I've taken a great
-          interest in is machine learning. As a student in mathematical physics
-          that has had a lot of experience with writing optimization algorithms
-          and analyzing data, I've always been interested in discovering new
-          techniques that can be applied in computational physics. Machine
-          learning has already proven to be very useful in physics and many
-          other areas of research and for this reason I've invested a lot of
-          time into understanding machine learning and how to implement it.
-          At this point, I currently have gained a confident understanding
-          of the fundamentals including regression algorithms and neural
-          networks and have become familiar with two machine learning modules
-          for Python: TensorFlow and Scikit-Learn. I've summarized a lot
-          of what I learned about these modules in my
-          <a href="https://github.com/DanSehayek/MachineLearning">
-          MachineLearning </a> repository on GitHub so please feel free to
-          check it out!
+          My path in machine learning originally occurred out of self-interest.
+          As a student in mathematical physics with plenty of experience in
+          writing optimization algorithms and analyzing data, I've always
+          been interested in discovering new techniques that can be applied
+          in computational physics. Machine learning had clearly proven to
+          be very useful in many other areas of research and industry,
+          and for this reason began investing a
+          lot of time into understanding machine learning and how to
+          implement it. The results of this are the ML Docs shown above
+          and my
+          <a href="https://github.com/DanSehayek/MachineLearning"> ML repo</a>,
+          which is simply an archive of lessons that I ran
+          through a few years ago. Little did I know that I’d be working
+          the the Quantum Intelligence Lab at Perimeter soon after! Feel
+          free to read more about this under my Perimeter research section.
         </p>
       </div>
     </div>
   </div>
 </div>
 
-<div class = "jumbotron bg-white slideanim" id = "AIMNorth">
-  <div class = "container">
-    <div class = "row">
-      <div class = "col-sm-7" id = "AppText">
-        <h2> AIM-North </h2>
-        <p class = "Text">
-          During my first coop term at Environment Canada (EC),
-          my main focus was contributing to project
-          <a href = "http://aim-north.ca/"> AIM-North </a>.
-          The main goal of this project is to provide frequent
-          and high quality observations of greenhouse gases, air
-          quality and solar induced fluorescence from vegetation
-          in the northern regions. This would be accomplished using
-          two satellites placed in a highly elliptical orbit (HEO)
-          configuration. The different subprojects that I was given in
-          relation to this mission included:
-          <ul class = "Text">
-            <li>Providing cloud data visualization and analysis
-              using Numpy and Matplotlib in order to
-              assess the plausibility of intelligent pointing</li>
-            <li>Developing a model to represent the regions of
-              observation of the HEO satellite while considering
-              the Bowtie effect (shown to the right)</li>
-            <li>Researching and summarizing papers to help determine
-              the orbital configurations that would optimize
-              spatial and temporal coverage</li>
-          </ul>
-        </p>
-        <p class = "Text">
-          If you would like to learn more about this project then I
-          would encourage you to click the link above!
-        </p>
-      </div>
-      <div class = "col-sm-5">
-        <img src = "img/AIMNorth.png" class = "img-thumbnail">
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class = "jumbotron bg-grey slideanim" id = "Multipole">
-  <div class = "container">
-    <div class = "row">
-      <div class = "col-sm-5">
-        <img src = "img/Multipole.png" class = "img-thumbnail">
-      </div>
-      <div class = "col-sm-7" id = "WebText">
-        <h2> Multipole Tuning Algorithm </h2>
-        <p class = "Text">
-          The first major project that I was given at Triumf was to create and
-          implement an optimization/automatic tuning algorithm for the CANREB
-          HRS Multipole. The ultimate goal of this algorithm is to determine
-          the optimal configuration of electrode potentials that will correct
-          higher order beam aberrations given an initial phase space
-          distribution. In essence the algorithm will tune the multipole with
-          the goal of modifying the beam's shape to that of a vertical ellipse.
-          This will allow only the desired rare isotope to pass through the
-          exit slit. Most of the scientific programming involved was done using
-          Scipy and Numpy. While many different optimization routines were
-          considered, the method of least squares was determined to be the most
-          effective in terms of minimizing the total deviation and runtime.
-        </p>
-        <p class = "Text">
-          For a full description of the algorithm, I would encourage you to
-          read my
-          <a href = "http://lin12.triumf.ca/text/design_notes/2017Sehayek_multipole-tuning-algorithm/Beam_phys_note_temp.pdf"> report </a>.
-          I also developed a web application for this algorithm
-          using the Python Flask framework that you can check out
-          <a href = "http://devel.hla.triumf.ca/atom"> here </a>.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class = "jumbotron bg-white slideanim" id = "Tomography">
-  <div class = "container">
-    <div class = "row">
-      <div class = "col-sm-7" id = "AppText">
-        <h2> Tomography Algorithm </h2>
-        <p class = "Text">
-          My second major project at Triumf is focused on optimizing the 2D
-          phase space tomography algorithm. The tomography algorithm was
-          developed to determine the phase space at a given longitudinal
-          coordinate along a beamline without the need for an emittance
-          scanner. The 2D tomography reconstruction is done using
-          Maximum Entropy Tomography (MENT) which
-          takes an arbitrary number of 1D profiles. By choosing a profile
-          monitor and setting a ramping element such as a quadrupole to
-          different values, these 1D profiles can be obtained by using the
-          corresponding transfer matrices while thus allowing for the phase
-          space reconstruction. Ultimately the number and types of profiles
-          and thus the number and types of transfer matrices/settings has a
-          major influence on the accuracy of the reconstruction and it is these
-          factors that I am currently considering in the design of the
-          optimization routine.
-        </p>
-        <p class = "Text">
-          As with the multipole algorithm, I am once again developing a web
-          application to go with this! I plan to add links to both the web app
-          and the report once they are completed.
-        </p>
-      </div>
-      <div class = "col-sm-5">
-        <img src = "img/Tomography.png" class = "img-thumbnail">
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class = "jumbotron bg-grey slideanim" id = "Awards">
+<!-- <div class = "jumbotron bg-grey slideanim" id = "Awards">
   <div class = "container">
     <div class = "text-left">
       <h2> Awards </h2>
@@ -460,7 +495,7 @@
       </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
