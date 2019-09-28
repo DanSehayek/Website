@@ -26,6 +26,9 @@
     <!-- Theme CSS -->
     <link href="css/My Webpage CSS.css" rel="stylesheet">
 
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </head>
 
 <body id = "myPage" data-spy = "scroll" data-target = ".navbar" data-offset = "60">
@@ -42,7 +45,8 @@
       <a class = "dropdown-toggle" data-toggle = "dropdown" href = "#"> Research
       <span class = "caret"></span></a>
       <ul class = "dropdown-menu">
-        <li class="dropdown-header"> Perimeter Institute </li>
+        <li class="dropdown-header"> Perimeter Institute / UW </li>
+        <li><a href = "#Semimetals"> Topological SM </a></li>
         <li><a href = "#QuantumML"> Quantum ML </a></li>
         <li class="dropdown-header"> Triumf </li>
         <li><a href = "#Multipole"> Multipole </a></li>
@@ -109,12 +113,48 @@
   </div>
 </div>
 
-<div class = "jumbotron bg-grey slideanim" id = "QuantumML">
+<div class = "jumbotron bg-grey slideanim" id = "Semimetals">
   <div class = "container">
     <div class = "row">
       <div class = "col-sm-5">
-        <img src = "img/RBM.png" class = "img-thumbnail">
+        <img src = "img/Semimetal.png" class = "img-thumbnail">
       </div>
+      <div class = "col-sm-7" id = "WebText">
+        <h2> Topological Semimetals </h2>
+        <p class = "Text">
+          The topological invariant of observable consequence in a metal is the
+          flux of Berry curvature through the 2D Fermi surface of the 3D metal.
+          This is due to points of degeneracy between bands, referred to as
+          Weyl nodes. These materials are referred to as Weyl semimetals,
+          assuming that the nodes are located right at the Fermi energy. One
+          interesting and useful property of these materials is their response
+          to chiral gauge fields. Specifically, applying a chiral gauge field
+          \(\vec{b}\) creates a Weyl semimetal in which 2 Weyl fermions are
+          separated by \(2b\) in momentum space along \(\vec{b}\). An
+          observable consequence of this is the topological current, an
+          anomalous Hall effect with transverse conductivity given by
+          \(\sigma_{xy} = \frac{e^2}{h}\frac{2b}{2\pi}\).
+        </p>
+        <p class = "Text">
+          One possible setup for the Weyl semimetal is the
+          <a href = "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.107.127205">topological
+          insulator multilayer</a>,
+          which consists of repeated layers
+          of regular insulators and topological insulators. Here, topological
+          stability or stability of the Weyl nodes requires that they be
+          separated in momentum space, which can be done by applying a
+          longitudinal magnetization. We are currently exploring the behaviour
+          of band structures and chiral anomalies in several variations of this
+          setup.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class = "jumbotron bg-white slideanim" id = "QuantumML">
+  <div class = "container">
+    <div class = "row">
       <div class = "col-sm-7" id = "WebText">
         <h2> Quantum Machine Learning </h2>
         <p class = "Text">
@@ -136,13 +176,19 @@
           Stay tuned for more updates as more of my projects become finalized!
         </p>
       </div>
+      <div class = "col-sm-5">
+        <img src = "img/RBM.png" class = "img-thumbnail">
+      </div>
     </div>
   </div>
 </div>
 
-<div class = "jumbotron bg-white slideanim" id = "Multipole">
+<div class = "jumbotron bg-grey slideanim" id = "Multipole">
   <div class = "container">
     <div class = "row">
+      <div class = "col-sm-5">
+        <img src = "img/Multipole.png" class = "img-thumbnail">
+      </div>
       <div class = "col-sm-7" id = "WebText">
         <h2> Multipole Tuning Algorithm </h2>
         <p class = "Text">
@@ -168,19 +214,13 @@
           <a href = "http://devel.hla.triumf.ca/atom"> here</a>.
         </p>
       </div>
-      <div class = "col-sm-5">
-        <img src = "img/Multipole.png" class = "img-thumbnail">
-      </div>
     </div>
   </div>
 </div>
 
-<div class = "jumbotron bg-grey slideanim" id = "Tomography">
+<div class = "jumbotron bg-white slideanim" id = "Tomography">
   <div class = "container">
     <div class = "row">
-      <div class = "col-sm-5">
-        <img src = "img/Tomography.png" class = "img-thumbnail">
-      </div>
       <div class = "col-sm-7" id = "AppText">
         <h2> Tomography Algorithm </h2>
         <p class = "Text">
@@ -209,19 +249,25 @@
           tomography.
         </p>
       </div>
+      <div class = "col-sm-5">
+        <img src = "img/Tomography.png" class = "img-thumbnail">
+      </div>
     </div>
   </div>
 </div>
 
-<div class = "jumbotron bg-white slideanim" id = "AIMNorth">
+<div class = "jumbotron bg-grey slideanim" id = "AIMNorth">
   <div class = "container">
     <div class = "row">
+      <div class = "col-sm-5">
+        <img src = "img/AIMNorth.png" class = "img-thumbnail">
+      </div>
       <div class = "col-sm-7" id = "AppText">
         <h2> AIM-North </h2>
         <p class = "Text">
           During my first coop term at Environment Canada (EC),
           my main focus was contributing to project
-          <a href = "http://aim-north.ca/"> AIM-North </a>.
+          <a href = "http://aim-north.ca/"> AIM-North</a>.
           The main goal of this project is to provide frequent
           and high quality observations of greenhouse gases, air
           quality and solar induced fluorescence from vegetation
@@ -246,19 +292,13 @@
           would encourage you to click the link above!
         </p>
       </div>
-      <div class = "col-sm-5">
-        <img src = "img/AIMNorth.png" class = "img-thumbnail">
-      </div>
     </div>
   </div>
 </div>
 
-<div class = "jumbotron bg-grey slideanim" id = "CuriosityCompass">
+<div class = "jumbotron bg-white slideanim" id = "CuriosityCompass">
   <div class = "container">
     <div class = "row">
-      <div class = "col-sm-5">
-        <img src = "img/Curiosity Compass.png" class = "img-thumbnail" alt = "Cool Eagle">
-      </div>
       <div class = "col-sm-7" id = "CuriosityText">
         <h2> Curiosity Compass </h2>
         <p class = "Text">
@@ -276,13 +316,19 @@
           when time permits!
         </p>
       </div>
+      <div class = "col-sm-5">
+        <img src = "img/Curiosity Compass.png" class = "img-thumbnail" alt = "Cool Eagle">
+      </div>
     </div>
   </div>
 </div>
 
-<div class = "jumbotron bg-white slideanim" id = "GameDevelopment">
+<div class = "jumbotron bg-grey slideanim" id = "GameDevelopment">
   <div class = "container">
     <div class = "row">
+      <div class = "col-sm-5">
+        <img src = "img/Airstrike Gameplay.png" class = "img-thumbnail">
+      </div>
       <div class = "col-sm-7" id = "GameText">
         <h2> Game Development </h2>
         <p class = "Text">
@@ -300,19 +346,13 @@
           my games on my GitHub account!
         </p>
       </div>
-      <div class = "col-sm-5">
-        <img src = "img/Airstrike Gameplay.png" class = "img-thumbnail">
-      </div>
     </div>
   </div>
 </div>
 
-<div class = "jumbotron bg-grey slideanim" id = "WebDevelopment">
+<div class = "jumbotron bg-white slideanim" id = "WebDevelopment">
   <div class = "container">
     <div class = "row">
-      <div class = "col-sm-5">
-        <img src = "img/Web Development.png" class = "img-thumbnail">
-      </div>
       <div class = "col-sm-7" id = "WebText">
         <h2> Web Development </h2>
         <p class = "Text">
@@ -340,13 +380,19 @@
           Triumf, simply check out Triumf under Research or keep scrolling down!
         </p>
       </div>
+      <div class = "col-sm-5">
+        <img src = "img/Web Development.png" class = "img-thumbnail">
+      </div>
     </div>
   </div>
 </div>
 
-<div class = "jumbotron bg-white slideanim" id = "AppDevelopment">
+<div class = "jumbotron bg-grey slideanim" id = "AppDevelopment">
   <div class = "container">
     <div class = "row">
+      <div class = "col-sm-5">
+        <img src = "img/Atom Labs App.png" class = "img-thumbnail">
+      </div>
       <div class = "col-sm-7" id = "AppText">
         <h2> Android App Development </h2>
         <p class = "Text">
@@ -372,19 +418,13 @@
           as unit converters and graphical analysis.
         </p>
       </div>
-      <div class = "col-sm-5">
-        <img src = "img/Atom Labs App.png" class = "img-thumbnail">
-      </div>
     </div>
   </div>
 </div>
 
-<div class = "jumbotron bg-grey slideanim" id = "MachineLearning">
+<div class = "jumbotron bg-white slideanim" id = "MachineLearning">
   <div class = "container">
     <div class = "row">
-      <div class = "col-sm-6">
-        <img src = "img/NeuralNetwork.png" class = "img-thumbnail">
-      </div>
       <div class = "col-sm-6" id = "WebText">
         <h2> Machine Learning </h2>
         <p class = "Text">
@@ -404,6 +444,9 @@
           the the Quantum Intelligence Lab at Perimeter soon after! Feel
           free to read more about this under my Perimeter research section.
         </p>
+      </div>
+      <div class = "col-sm-6">
+        <img src = "img/NeuralNetwork.png" class = "img-thumbnail">
       </div>
     </div>
   </div>
