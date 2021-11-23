@@ -91,19 +91,19 @@
         <h2> About Me </h2>
         <p class = "Text">
           Hi there! My name is Dan Sehayek and I am currently completing my
-          final year as an undergraduate Mathematical Physics student at the
-          University of Waterloo. I have always been extremely passionate about
+          masters in physics at the University of Waterloo. I have always been
+          extremely passionate about
           learning mathematics and physics as they constantly provide exciting
           challenges and opportunities to gain a better understanding of the
           way the world works.
         </p>
         <p class = "Text">
-          I could definitely say that I believe in the value of constantly
-          taking the initiative to learn new things and gain new
-          perspectives. Thoughout my undergraduate career, I've worked with
-          several amazing research groups and completed many personal
-          projects related to physics, programming and education. Feel free
-          to read more about my research and projects in the sections below!
+          Thoughout my career as a physics student, I've worked with
+          several amazing research groups and completed many fun personal
+          projects. Currently, my research is condensed matter focused,
+          with an emphasis on exploring generalizations and new methods for
+          detecting topological order. Feel free to read more about my research
+          and projects in the sections below!
         </p>
       </div>
       <div class = "col-sm-4">
@@ -117,35 +117,23 @@
   <div class = "container">
     <div class = "row">
       <div class = "col-sm-5">
-        <img src = "img/Semimetal.png" class = "img-thumbnail">
+        <img src = "img/VortexLines.png" class = "img-thumbnail">
       </div>
       <div class = "col-sm-7" id = "WebText">
-        <h2> Topological Semimetals </h2>
+        <h2> 3D FQH in Weyl Semimetals  </h2>
         <p class = "Text">
-          The topological invariant of observable consequence in a metal is the
-          flux of Berry curvature through the 2D Fermi surface of the 3D metal.
-          This is due to points of degeneracy between bands, referred to as
-          Weyl nodes. These materials are referred to as Weyl semimetals,
-          assuming that the nodes are located right at the Fermi energy. One
-          interesting and useful property of these materials is their response
-          to chiral gauge fields. Specifically, applying a chiral gauge field
-          \(\vec{b}\) creates a Weyl semimetal in which 2 Weyl fermions are
-          separated by \(2b\) in momentum space along \(\vec{b}\). An
-          observable consequence of this is the topological current, an
-          anomalous Hall effect with transverse conductivity given by
-          \(\sigma_{xy} = \frac{e^2}{h}\frac{2b}{2\pi}\).
+          Gapless Weyl semimetals are known for their chiral anomaly
+          response. Is it possible
+          to gap Weyl semimetals while preserving their response? The answer
+          was shown to be yes in <a href = "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.124.096603"> (Chong, Gioia, Burkov) </a> - by adding a
+          superconducting pairing term and restoring the resulting broken
+          charge conservation symmetry through flux \(4\pi\) condensation, the original gapless response is restored. The resulting state
+          has \(\mathbb{Z}_4\) topological order and nontrivial gapped loop excitations, and can be viewed as a 3D analog of 2D FQH liquids.
         </p>
         <p class = "Text">
-          One possible setup for the Weyl semimetal is the
-          <a href = "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.107.127205">topological
-          insulator multilayer</a>,
-          which consists of repeated layers
-          of regular insulators and topological insulators. Here, topological
-          stability or stability of the Weyl nodes requires that they be
-          separated in momentum space, which can be done by applying a
-          longitudinal magnetization. We are currently exploring the behaviour
-          of band structures and chiral anomalies in several variations of this
-          setup.
+          Details of the hydrodynamic background field (BF) field theory are later derived in <a href = "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.235168"> (Thakurathi, Burkov) </a>.
+          In <a href = "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.102.115159">our recent paper</a>, we show that the same gapped Weyl semimetals with \(\mathbb{Z}_4\)
+          topological order can be constructed from charge density wave interactions.
         </p>
       </div>
     </div>
@@ -168,12 +156,10 @@
           as address many of the challenges currently faced in quantum
           computing, such as benchmarking quantum devices via quantum state
           reconstuction and applying quantum error correcting to topological
-          codes. I currently have one publication being reviewed for PRB on
-          the learnability of quantum states with restricted Boltzmann
-          machines, which is one of the many generative models that we
-          frequently use to solve these problems. It can be found on
-          <a href = "https://arxiv.org/abs/1908.07532"> arXiv</a>.
-          Stay tuned for more updates as more of my projects become finalized!
+          codes. In our recent <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.100.195125">PRB publication</a>,
+          we study the the learnability of quantum states with restricted
+          Boltzmann machines, which is one of the many generative models that
+          are frequently used to solve these problems.
         </p>
       </div>
       <div class = "col-sm-5">
@@ -207,10 +193,10 @@
         </p>
         <p class = "Text">
           For a full description of the algorithm, I would encourage you to
-          read my
+          read our
           <a href = "http://accelconf.web.cern.ch/AccelConf/ipac2018/papers/thpml079.pdf"> paper</a>.
           I also developed a web application for this algorithm
-          using the Python Flask framework that you can check out
+          using the Python Flask framework that you can find
           <a href = "http://devel.hla.triumf.ca/atom"> here</a>.
         </p>
       </div>
@@ -226,27 +212,25 @@
         <p class = "Text">
           My second major project at Triumf is focused on optimizing the 2D
           phase space tomography algorithm. The tomography algorithm was
-          developed to determine the phase space at a given longitudinal
+          developed to determine the beam phase space distribution at a given longitudinal
           coordinate along a beamline without the need for an emittance
           scanner. The 2D tomography reconstruction is done using
           Maximum Entropy Tomography (MENT) which
           takes an arbitrary number of 1D profiles. By choosing a profile
           monitor and setting a ramping element such as a quadrupole to
-          different values, these 1D profiles can be obtained by using the
-          corresponding transfer matrices while thus allowing for the phase
-          space reconstruction. Ultimately the number and types of profiles
+          different values, these 1D profiles can be obtained using the
+          corresponding transfer matrices. Ultimately the number and types of profiles
           and thus the number and types of transfer matrices/settings has a
           major influence on the accuracy of the reconstruction and it is these
           factors that I am currently considering in the design of the
           optimization routine.
         </p>
         <p class = "Text">
-          Once again, a full overview of my results for this project can be
+          A full overview of my results for this project can be
           found in my
-          <a href = "http://lin12.triumf.ca/text/design_notes/TRI-BN-18-06.pdf"> report</a>.
-          And the relevant web application can be found
-          <a href = "https://devel.hla.triumf.ca/beam"> here</a> under
-          tomography.
+          <a href = "http://lin12.triumf.ca/text/design_notes/TRI-BN-18-06.pdf"> report</a>,
+          and our web application for beam tomography can be found
+          <a href = "https://devel.hla.triumf.ca/beam"> here</a>.
         </p>
       </div>
       <div class = "col-sm-5">
@@ -422,7 +406,7 @@
   </div>
 </div>
 
-<div class = "jumbotron bg-white slideanim" id = "MachineLearning">
+<!-- <div class = "jumbotron bg-white slideanim" id = "MachineLearning">
   <div class = "container">
     <div class = "row">
       <div class = "col-sm-6" id = "WebText">
@@ -450,7 +434,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- <div class = "jumbotron bg-grey slideanim" id = "Awards">
   <div class = "container">
